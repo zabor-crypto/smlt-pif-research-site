@@ -1,0 +1,130 @@
+{
+  "scene_count": 12,
+  "total_seconds": 600,
+  "speech_demo_seconds": 540,
+  "transition_seconds": 60,
+  "scenes": [
+    {
+      "id": "problem",
+      "number": 1,
+      "title": "Исходная позиция и задача ПИФа",
+      "start": 0,
+      "end": 40,
+      "seconds": 40,
+      "speech_demo_seconds": 36,
+      "transition_seconds": 4
+    },
+    {
+      "id": "team",
+      "number": 2,
+      "title": "Команда проекта",
+      "start": 40,
+      "end": 65,
+      "seconds": 25,
+      "speech_demo_seconds": 21,
+      "transition_seconds": 4
+    },
+    {
+      "id": "hypotheses",
+      "number": 3,
+      "title": "Выбор и масштаб защиты",
+      "start": 65,
+      "end": 100,
+      "seconds": 35,
+      "speech_demo_seconds": 32,
+      "transition_seconds": 3
+    },
+    {
+      "id": "assets",
+      "number": 4,
+      "title": "Экономическая роль инструментов",
+      "start": 100,
+      "end": 160,
+      "seconds": 60,
+      "speech_demo_seconds": 54,
+      "transition_seconds": 6
+    },
+    {
+      "id": "data",
+      "number": 5,
+      "title": "Информация и время решения",
+      "start": 160,
+      "end": 215,
+      "seconds": 55,
+      "speech_demo_seconds": 50,
+      "transition_seconds": 5
+    },
+    {
+      "id": "risk",
+      "number": 6,
+      "title": "Совместный риск и ожидания",
+      "start": 215,
+      "end": 280,
+      "seconds": 65,
+      "speech_demo_seconds": 59,
+      "transition_seconds": 6
+    },
+    {
+      "id": "states",
+      "number": 7,
+      "title": "Состояния и сценарии",
+      "start": 280,
+      "end": 340,
+      "seconds": 60,
+      "speech_demo_seconds": 54,
+      "transition_seconds": 6
+    },
+    {
+      "id": "episode",
+      "number": 8,
+      "title": "Кредитный риск вырос: решение по всей книге",
+      "start": 340,
+      "end": 380,
+      "seconds": 40,
+      "speech_demo_seconds": 36,
+      "transition_seconds": 4
+    },
+    {
+      "id": "decision",
+      "number": 9,
+      "title": "От намерения к исполнению",
+      "start": 380,
+      "end": 435,
+      "seconds": 55,
+      "speech_demo_seconds": 47,
+      "transition_seconds": 8
+    },
+    {
+      "id": "engine",
+      "number": 10,
+      "title": "Техническая разработка финансовой модели ПИФа",
+      "start": 435,
+      "end": 495,
+      "seconds": 60,
+      "speech_demo_seconds": 54,
+      "transition_seconds": 6
+    },
+    {
+      "id": "results",
+      "number": 11,
+      "title": "Результат исследования",
+      "start": 495,
+      "end": 570,
+      "seconds": 75,
+      "speech_demo_seconds": 70,
+      "transition_seconds": 5
+    },
+    {
+      "id": "conclusion",
+      "number": 12,
+      "title": "Адаптивное управление целым ПИФом",
+      "start": 570,
+      "end": 600,
+      "seconds": 30,
+      "speech_demo_seconds": 27,
+      "transition_seconds": 3
+    }
+  ],
+  "rehearsal": "PLANNED_NOT_RECORDED",
+  "frozen_downloads": "V1.0 PPTX/PDF unchanged: 11 main plus 3 reference"
+}
