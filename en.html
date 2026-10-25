@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Academic portfolio-risk research: point-in-time inputs, hedge feasibility, delayed execution and whole-book accounting. Source export and synthetic examples.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>SMLT portfolio-risk research · English brief</title>
+  <style>
+    :root{color-scheme:light;--ink:#162b38;--teal:#137b82;--paper:#f5f2e9;--line:#d0d4cf}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 Arial,sans-serif}
+    header,main,footer{max-width:1050px;margin:auto;padding:28px 28px}header{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}
+    a{color:var(--teal);text-underline-offset:4px}a:focus-visible{outline:3px solid #b36647;outline-offset:4px}nav{display:flex;gap:20px;flex-wrap:wrap}
+    h1,h2{font-family:Georgia,serif;font-weight:400;line-height:1.15}h1{font-size:clamp(40px,6vw,66px);max-width:850px;margin:16px 0 24px}h2{font-size:31px;margin:0 0 16px}
+    .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#86513a}.lead{font:23px/1.5 Georgia,serif;max-width:870px}
+    section{margin:46px 0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.grid article{border-top:3px solid var(--teal);padding-top:16px}.grid h3{font:24px/1.25 Georgia,serif;margin:0 0 12px}.grid p{font-size:16px}
+    .boundary{border-left:3px solid #b36647;padding:6px 0 6px 20px}.small,footer{font-size:14px;color:#526974}li{margin:10px 0}footer{border-top:1px solid var(--line)}
+    @media(max-width:700px){header{display:block}nav{margin-top:14px}.grid{grid-template-columns:1fr}header,main,footer{padding:22px}}
+  </style>
+</head>
+<body>
+  <header>
+    <strong>SMLT / Portfolio-risk research</strong>
+    <nav aria-label="Project navigation"><a href="index.html" lang="ru">Русская версия</a><a href="team.html">Team</a><a href="https://github.com/zabor-crypto/smlt-pif-research-code">Source code</a></nav>
+  </header>
+  <main>
+    <p class="eyebrow">Academic research · Financial modelling · Quant engineering</p>
+    <h1>Can a hedge work for the whole portfolio?</h1>
+    <p class="lead">A hedge can reduce one exposure and still fail when cash, margin, liquidity and settlement meet a sequence of market events. This academic prototype treats the proposed hedge and the fund's continuing book as one problem.</p>
+    <p class="boundary">The result presented here is a financial specification and software prototype. Comparative economic effectiveness, market out-of-sample performance and live readiness have not been established.</p>
+    <section aria-labelledby="engineering">
+      <h2 id="engineering">What to inspect</h2>
+      <div class="grid">
+        <article><h3>Information timing</h3><p>Inputs are distinguished by what was available at a decision time. Later information must not silently enter an earlier decision.</p></article>
+        <article><h3>Feasible execution</h3><p>A candidate allocation, a recorded intention and a later executed trade are different states. Integer contracts, cash, margin and costs constrain the transition.</p></article>
+        <article><h3>A continuing book</h3><p>Positions and obligations continue through HOLD, rejection and blocked execution. A plausible endpoint is insufficient without the path that reaches it.</p></article>
+      </div>
+      <p><a href="engineering.html">Read the detailed architecture in Russian</a> or <a href="appendix.html#scenario-matrix">explore the qualitative scenario matrix</a>. The browser illustrations explain the design; they do not run the research engine.</p>
+    </section>
+    <section aria-labelledby="contribution">
+      <h2 id="contribution">Contribution and collaboration</h2>
+      <p>Boris Zabavnikov led the project and quantitative modelling: the financial problem, fund model, hedging and optimization algorithms, and execution mechanism. This was a six-person academic project with shared engineering and testing, alongside issuer, macroeconomic, credit and instrument research.</p>
+      <p><a href="team.html">The team page attributes the individual workstreams.</a> Repository ownership does not imply sole authorship of every component.</p>
+    </section>
+    <section aria-labelledby="reproduce">
+      <h2 id="reproduce">A bounded, reproducible entry point</h2>
+      <ol>
+        <li><a href="https://github.com/zabor-crypto/smlt-pif-research-code#english-brief">Read the source repository's English brief.</a> It identifies the exported snapshot and excluded material.</li>
+        <li>Use its Python 3.12 environment and locked dependencies. Run only the documented synthetic data/storage and option-mechanics tests.</li>
+        <li>Keep the conclusion scoped: these examples check their formulas and mechanics, not the full adaptive policy or its economics.</li>
+      </ol>
+      <p class="small">Market datasets, economic-run configurations, generated research outputs, portraits and original academic documents are not distributed with this site. The full market study cannot be reproduced from this public source export.</p>
+    </section>
+    <section aria-labelledby="rights">
+      <h2 id="rights">Publication and rights</h2>
+      <p>This is a public academic presentation and a separate source export. No open-source reuse license has been granted; rights remain with the respective holders. Dependency licenses are separate, and code visibility grants no rights to market data.</p>
+    </section>
+  </main>
+  <footer>Academic version 1.0 · <a href="readme.html#materials">Materials and reading order</a> · <a href="https://github.com/zabor-crypto/smlt-pif-research-site">Presentation source</a></footer>
+</body>
+</html>
